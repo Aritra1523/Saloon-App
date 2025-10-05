@@ -1,0 +1,170 @@
+body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f0f4ff, #e5ecfb);
+      margin: 0;
+      padding: 0;
+      color: #1f2937;
+    }
+
+    header {
+      background: #4f46e5;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: 600;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      font-size: 20px;
+      color: #111827;
+      border-left: 5px solid #4f46e5;
+      padding-left: 10px;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+    }
+
+    #appointments {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    #appointments li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    #appointments li:last-child {
+      border-bottom: none;
+    }
+
+    .details {
+      flex: 1;
+    }
+
+    .details p {
+      margin: 2px 0;
+      font-size: 15px;
+    }
+
+    /* Buttons */
+    .actions {
+      display: flex;
+      gap: 8px;
+    }
+
+    .btn {
+      padding: 8px 14px;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    .approve {
+      background: #10b981;
+      color: white;
+    }
+
+    .approve:hover {
+      background: #059669;
+    }
+
+    .complete {
+      background: #3b82f6;
+      color: white;
+    }
+
+    .complete:hover {
+      background: #2563eb;
+    }
+
+    .delete {
+      background: #ef4444;
+      color: white;
+    }
+
+    .delete:hover {
+      background: #dc2626;
+    }
+/* Default card look */
+.appointment-card {
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+/* Pending */
+.appointment-card.pending {
+  background: #fff3cd;  /* light yellow */
+  border-left: 5px solid #ffc107;
+  color: #856404;
+}
+
+/* Approved */
+.appointment-card.approved {
+  background: #cce5ff;  /* light blue */
+  border-left: 5px solid #007bff;
+  color: #004085;
+}
+
+/* Completed */
+.appointment-card.completed {
+  background: #d4edda;  /* light green */
+  border-left: 5px solid #28a745;
+  color: #155724;
+}
+/* Waiting */
+.appointment-card.waiting {
+  background: #f8d7da;   /* light red/pink */
+  border-left: 5px solid #dc3545;
+  color: #721c24;
+}
+
+/* Hover effect */
+.appointment-card:hover {
+  transform: scale(1.02);
+}
+
+    /* Mobile Responsive */
+    @media (max-width: 600px) {
+      #appointments li {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .actions {
+        margin-top: 10px;
+      }
+    }

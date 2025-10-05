@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="user.css">
+  <title>Salon Booking - User</title>
+</head>
+<body>
+  <h1>💇Salon Booking💇</h1>
+
+  <!-- Booking Form -->
+  <input id="name" placeholder="Your Name" required>
+   <label for="service">Service:</label>
+      <select id="service" required>
+        <option value="">-- Select Service --</option>
+        <option value="Haircut">Haircut</option>
+        <option value="Beard Shape">Beard Shape</option>
+        <option value="Haircut + Beard Shape">Haircut + Beard Shape</option>
+      </select>
+ <label for="time">Preferred Time:</label>
+<select id="time" required>
+  <option value="">-- Select Time --</option>
+  <option value="10:00 AM">10:00 AM</option>
+  <option value="11:00 AM">11:00 AM</option>
+  <option value="12:00 PM">12:00 PM</option>
+  <option value="1:00 PM">1:00 PM</option>
+  <option value="2:00 PM">2:00 PM</option>
+  <option value="3:00 PM">3:00 PM</option>
+  <option value="4:00 PM">4:00 PM</option>
+  <option value="5:00 PM">5:00 PM</option>
+</select>
+
+  <button onclick="bookSlot()">Book</button>
+  <button onclick="showQueue()">Refresh Waiting List</button>
+ 
+  <h3 id="waitingInfo"></h3>
+
+  <!-- Queue list -->
+  <div class="queue-container">
+  <h2>Current Queue</h2>
+  <ul id="queue"></ul>
+</div>
+  <script src="user.js"></script>
+</body>
+</html>

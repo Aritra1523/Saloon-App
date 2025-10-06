@@ -39,3 +39,10 @@ Salon managers can monitor bookings, mark services as completed, and calculate e
 ![Complete Work](https://github.com/Aritra1523/Saloon-App/blob/master/Completed%20Work.png)
 ### Delete User  
 ![Delete User](https://github.com/Aritra1523/Saloon-App/blob/master/Delete%20user.png)
+
+## 🔹 Clone This Repository
+
+To clone this project to your local machine, run the following command in your terminal:
+
+```bash
+git clone https://github.com/Aritra1523/Saloon-App
